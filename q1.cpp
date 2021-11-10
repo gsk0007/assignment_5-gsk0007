@@ -3,15 +3,32 @@
 using namespace std;
 
 int main(){
+    // variables
     char sentence[101];
     char preChar = ' ';
+    bool isChanged = false;
+    int i = 0;
 
     // Prompt user to input sentence
     cout << "Enter a sentence: " << endl;
     // Get user input
     cin.getline(sentence, 101);
+
+    // check for too many spaces
+    do{
+        while(sentence[i] != '\0'){
+            if (sentence[i] == ' ' && sentence[i+1] == ' '){
+                for(int k = i+1; k < 101; k++){
+                    sentence[k] = sentence[k+1];
+                }
+                isChanged = true;
+            } else {
+                isChanged = false;
+            }
+        }
+    } while (isChanged = true);
+    
     // set all letters to lowercase
-    int i = 0;
     while(sentence[i] != '\0'){
         sentence[i] = tolower(sentence[i]);
         i++;        
