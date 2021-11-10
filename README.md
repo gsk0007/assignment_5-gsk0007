@@ -25,7 +25,7 @@ function that is called with the two input-file streams and the output-file stre
 ## Exercise 4 (15 points) 
 Write a program that allows the user to type in any one-line question and then answers that 
 question. The program will not really pay any attention to the question but will simply read the 
-question line and discard all that it reads. It always givesone of the following answers: 
+question line and discard all that it reads. It always gives one of the following answers: 
  
 I'm not sure but I think you will find the answer in Chapter 20. 
 That's a good question. 
