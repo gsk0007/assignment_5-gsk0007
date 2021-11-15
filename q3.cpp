@@ -16,7 +16,7 @@ int main()
     if (!input1 || !input2)
     {
         cout << "Error opening input file" << endl;
-        exit(1);
+        return(1);
     }
     // Create vector to hold values from files
     vector<int> outputVector;
